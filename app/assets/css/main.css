@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@font-face {
+  font-family: 'edu';
+  src: url('/fonts/Edu_QLD_Hand/EduQLDHand-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'montserrat-italic';
+  src: url('/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'niconne';
+  src: url('/fonts/Niconne/Niconne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'oswald';
+  src: url('/fonts/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'roboto-italic';
+  src: url('/fonts/Roboto/Roboto-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+@theme {
+    --font-edu : edu;
+    --font-montserrat : montserrat;
+    --font-niconne : niconne;
+    --font-oswald : oswald;
+    --font-roboto : roboto;
+    --font-montserrat-italic : 'montserrat-italic';
+    --font-roboto-italic : 'roboto-italic';
+
+}
+
+h1 {
+  @apply text-2xl font-bold font-edu
+}
+h2 {
+  @apply text-2xl  font-semibold font-montserrat
+}
+h3 {
+  @apply text-xl  font-medium font-roboto
+}
+p {
+  @apply font-montserrat
+}
